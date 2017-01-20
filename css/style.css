@@ -167,112 +167,6 @@ header .header_bottom .right_block .timer ul.widget-timer li .label {
   font-size: 21.414790996784564px;
   line-height: 21.414790996784564px;
 }
-.message {
-  left: 381.5px;
-  top: 67px;
-  position: fixed;
-  display: block;
-  width: 500px;
-  height: 340px;
-  padding-top: 130px;
-  text-align: center;
-  color: #43474c;
-  font-size: 16px;
-  z-index: 1000;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-}
-.message .close {
-  background: url(../fancybox/fancybox_sprite@2x.png) 0 0;
-  background-size: 120%;
-  position: absolute;
-  right: -10px;
-  top: -10px;
-  cursor: pointer;
-  height: 28px;
-  width: 28px;
-  color: #06c;
-  text-decoration: underline;
-}
-.preload {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 100000000;
-}
-.preload .cssload-container {
-  position: relative;
-  top: 50%;
-  margin-top: -24.5px;
-  width: 100%;
-  height: 49px;
-  text-align: center;
-}
-.preload .cssload-container .img {
-  position: absolute;
-  left: 50%;
-  margin-left: -18px;
-  margin-top: 15px;
-  width: 36px;
-  height: 32px;
-  background: url(../img/message.png);
-  background-size: 100%;
-}
-.preload .cssload-container p {
-  font-size: 14px;
-  color: #ececec;
-}
-.preload .cssload-speeding-wheel {
-  width: 59px;
-  height: 59px;
-  margin: 0 auto;
-  border: 3px solid #ececec;
-  border-radius: 50%;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  animation: cssload-spin 575ms infinite linear;
-  -o-animation: cssload-spin 575ms infinite linear;
-  -ms-animation: cssload-spin 575ms infinite linear;
-  -webkit-animation: cssload-spin 575ms infinite linear;
-  -moz-animation: cssload-spin 575ms infinite linear;
-}
-@keyframes cssload-spin {
-  100% {
-    transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-o-keyframes cssload-spin {
-  100% {
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-ms-keyframes cssload-spin {
-  100% {
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes cssload-spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-moz-keyframes cssload-spin {
-  100% {
-    -moz-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 section {
   height: 438px;
 }
@@ -420,6 +314,36 @@ section {
   border-radius: 0;
   padding: 0;
 }
+.section-1 .right .message {
+  left: 381.5px;
+  top: 67px;
+  position: fixed;
+  display: block;
+  width: 500px;
+  height: 200px;
+  padding-top: 130px;
+  text-align: center;
+  color: #43474c;
+  font-size: 16px;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.section-1 .right .message .close {
+  background: url(../fancybox/fancybox_sprite@2x.png) 0 0;
+  background-size: 120%;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  cursor: pointer;
+  height: 28px;
+  width: 28px;
+  color: #06c;
+  text-decoration: underline;
+}
 .section-2 {
   height: 280px;
 }
@@ -483,19 +407,11 @@ section {
 .section-2 .right {
   margin-right: 60px;
   float: right;
-  position: relative;
 }
 .section-2 .right img {
   padding-top: 60px;
   width: 383px;
   height: 182px;
-}
-.section-2 .right img.zapravka {
-  position: absolute;
-  left: 30px;
-  top: 117px;
-  height: 63px;
-  width: 135px;
 }
 .section-3 .title {
   color: #008000;
