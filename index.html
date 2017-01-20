@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Изготовление печати в краткие сроки</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--
+        if lt IE 9
+        script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+        script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+        -->
+    <!-- <link rel="icon" type="image/x-icon" href="img/Icon.png"> -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/Icon.png"> -->
+    <!-- style -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- js -->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- <script src="js/jquery-3.1.1.min.js"></script> -->
+    <!-- <script src="js/jquery-1.7.2.min.js"></script> -->
+    <!-- <script src="js/jquery.cookie.js"></script> -->
+    <!-- fancybox -->
+    <script src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.5" />
+    
+    <script src="js/slick.min.js"></script>
+    
+    <script src="js/timer.js"></script>
+    <script src="js/timer2.js"></script>
+    <script src="js/maskedinput.js"></script>
+    <script>
+        var myDate = new Date();
+
+        function returnEndDate(h,m,s){
+            myDate.setDate(myDate.getDate());
+            myDate.setHours(myDate.getHours()+h);
+            myDate.setMinutes(myDate.getMinutes()+m);
+            myDate.setSeconds(myDate.getSeconds()+s);
+            return myDate;
+        }
+
+        // if($.cookie("timer")){
+            // var dateEnd = $.cookie("timer");
+        // }else{
+            var dateEnd = returnEndDate(2,50,0); 
+            // $.cookie("timer", dateEnd);
+        // }
+    </script>
+</head>
+<body>
+    <div class="message" style="display: none;">
+        Ваше сообщение доставлено в ближайшие время  с вами свяжется наш менеджер.<br><br>Спасибо что вы выбрали нас!
+        <div class="close"></div>
+    </div>
+    <div class="preload">
+        <div class="cssload-container">
+            <div class="img"></div>
+            <div class="cssload-speeding-wheel">
+            </div>
+            <p>Отправка...</p>
+        </div>
+    </div>
+    <header class="brown-had-top w-12">
+        <div class="container">
+            <div class="head_top">
+                <img src="img/check.png">
+                <div class="blocks row0-center-v">
+                    <div class="blocks-top row-center-h">
+                        <div class="block1">
+                            <p>Адрес:  м. Волгоградский проспект</p>
+                            <p>г. Москва, ул. Волгоградский пр-т, д. 32с12</p>
+                            <p>2 этаж, офис 3</p>
+                        </div>
+                        <div class="block2">
+                            <p>&nbsp;</p>
+                            <p class="phone">Моб: +7(925) 021-63-43 <img src="img/phone.png" alt=""></p>
+                            <p>E-mail: 3745745@gmail.com</p>
+                        </div>
+                        <div class="block3">
+                            <p>+7 (495) 3 745 745</p>
+                        </div>
+                    </div>
+                    <div class="block-bottom ">
+                        <p>Любая сложность! Конфеденциально! Прием заказов 24/7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <img src="img/izgotovleniepechatejichtampov.png" alt="" class="left">
+                <div class="right_block">
+                    <p class="top">Изготовление печати в краткие сроки</p>
+                    <p class="center">Ручная оснастка <br> БЕСПЛАТНО! </p>
+                    <img src="img/stamp.png" alt="" class="stamp">
+                    <div class="timer">
+                        <div class="title">ДОСТАВИМ В ТЕЧЕНИЕ</div>
+                        <ul class="widget-timer clock-1">
+                            <li>
+                                <div id="hour0" class="digits first">0</div>
+                                <div id="hour1" class="digits">0</div>
+                                <div class="label">часов</div>
+                            </li>
+                            <li class="symbol separator">:</li>
+                            <li>
+                                <div id="min0" class="digits first">0</div>
+                                <div id="min1" class="digits">0</div>
+                                <div class="label">минут</div>
+                            </li>
+                            <li class="symbol separator">:</li>
+                            <li>
+                                <div id="sec0" class="digits first">0</div>
+                                <div id="sec1" class="digits">0</div>
+                                <div class="label">секунд</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container section-1">
+        <div class="left">
+            <div class="block block-1">
+                <img src="img/prod1ex1.png" alt="">
+                <img src="img/blue_around.png" alt="" class="bg">
+                <ul>
+                    <li>Новые печати &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>500 Руб</span></li>
+                    <li>Новые печати Срочные &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>800 Руб</span></li>
+                    <li>Печати по оттиску &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>700 Руб</span></li>
+                    <li>Печати по оттиску Срочные &nbsp;&nbsp;&nbsp;&nbsp;<span>900 Руб</span></li>
+                </ul>
+            </div>
+            <div class="block block-2">
+                <img src="img/piramide.png" alt="">
+                <ul>
+                    <li>Новый штамп &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>от 300 Руб</span></li>
+                    <li>Новый штамп Срочный &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>от 600 Руб</span></li>
+                    <li>Штамп по оттиску &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>от 500 Руб</span></li>
+                    <li>Штамп по оттиску Срочный <span>от 800 Руб</span></li>
+                </ul>
+            </div>
+            <div class="block block-3">
+                <img src="img/signature.png" alt="">
+                <ul>
+                    <li class="no">&nbsp;</li>
+                    <li>Факсимиле&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>500 Руб</span></li>
+                    <li>Факсимиле Срочный &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>800 Руб</span></li>
+                    <li class="no">&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="titleform">Отправьте нам задание</div>
+            <img class="arrow" src="img/arrow_around.png" alt="">
+            <form enctype="multipart/formdiv" id="form-1">
+                    <div class="cont ">
+                          <input name="name-1f" type="text" placeholder="Наименование организации(Ф.И.О.ИП)*">
+                    </div>
+                    <div class="cont ">
+                          <input name="email-1f" type="email" placeholder="Email*">
+                    </div>
+
+                    <div class="cont ">
+                          <input class="the_phone" name="tel-1f" type="tel" value="" placeholder="Телефон*">
+                    </div>
+                    <div class="cont "> 
+                          <textarea name="text-1f" style="height: 100px" placeholder="ОГРН (ОРГНИП):   При необходимости укажите ИНН/КПП.                                   Напишите Коментарии и укажите адрес доставки.  Выберете дизаин макета"></textarea>
+                    </div>
+                     <div class="cont file">
+                          <input id="uploadimage" name="file-1f" type="file" >
+                    </div>
+            </form>
+            <div class="submit submit-1f">Отправить</div>
+            <p>Если у вас печать по оттиску прикрепите скан или фото </p>
+            <p class="bottom">* обязательное поле</p>
+            <!-- <p class="mail bottom">E-mail: <a href="mailto:3745745@gmail.com"><span>3745745@gmail.com</span></a></p> -->
+        </div>
+    </section>
+    <section class="container section-2">
+        <div class="left">
+            <div class="title_head">Закажи сегодня Печать и получи <br> скидку на заправку картриджей</div>
+            <div class="timer">
+                <div class="title">не упускай свой шанс сэкономить до 50% на заправке картриджа</div>
+                <ul class="widget-timer" data-countdown="10200" data-cookie="1">
+                    <li>
+                        <div class="digits hours0 first">0</div>
+                        <div class="digits hours1">0</div>
+                        <div class="label">часов</div>
+                    </li>
+                    <li class="symbol separator">:</li>
+                    <li>
+                        <div class="digits minutes0 first">0</div>
+                        <div class="digits minutes1">0</div>
+                        <div class="label">минут</div>
+                    </li>
+                    <li class="symbol separator">:</li>
+                    <li>
+                        <div class="digits seconds0 first">0</div>
+                        <div class="digits seconds1">0</div>
+                        <div class="label">секунд</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <img src="img/skidki-a.jpg" alt="">
+            <img class="zapravka" src="img/zapravka-logo.png" alt="">
+        </div>
+    </section>
+    <section class="container section-3">
+        <div class="title">С печатью также заказывают оснастки<br>для комфортного нанесения</div>
+        <div class="images row-h">
+            <a class="fancybox" data-fancybox-group="gallery" title="image 1" href="img/osnastki.jpg"> <img src="img/osnastki.jpg" alt=""></a>
+            <a class="fancybox" data-fancybox-group="gallery" title="image 2" href="img/imagemagic.jpg"> <img src="img/imagemagic.jpg" alt=""></a>
+            <a class="fancybox" data-fancybox-group="gallery" title="image 3" href="img/pocket-r25pechat.jpg"> <img src="img/pocket-r25pechat.jpg" alt=""></a>
+            <a class="fancybox" data-fancybox-group="gallery" title="image 4" href="img/metalicheskie-osnastki.png"> <img src="img/metalicheskie-osnastki.png" alt=""></a>
+            <a class="fancybox" data-fancybox-group="gallery" title="image 5" href="img/dateryi.png"> <img src="img/dateryi.png" alt=""></a>
+        </div>
+        <div class="price row-h">
+            <div class="pr-1">
+                <div class="name">Автоматические</div>
+                <div class="cost">от 200руб*</div>
+            </div>
+            <div class="pr-2">
+                <div class="name">Карманные maus </div>
+                <div class="cost">350руб</div>
+            </div>
+            <div class="pr-3">
+                <div class="name">Карманная Pocket</div>
+                <div class="cost">400 руб</div>
+            </div>
+            <div class="pr-4">
+                <div class="name">Металические оснаски</div>
+                <div class="cost">от 400 руб**</div>
+            </div>
+            <div class="pr-5">
+                <div class="name">Датеры</div>
+                <div class="cost">от 200 руб*</div>
+            </div>
+        </div>
+        <div class="dop">
+            <p>* &nbsp;цена завивит от размера уточняйте у менеджера.</p>
+            <p class="two">** цена зависит от размера и типа оснастки уточняйте у менеджера</p>
+            <p class="num">Звоните по телефону (495) 3-745-745</p>
+        </div>
+    </section>
+    <section class="container section-4">
+        <div class="title">Выберите дизаин печати и укажите его номер в коментариях</div>
+        <div class="images row-h">
+            <a class="fancybox-2" data-fancybox-group="gallery" title="image 1" href="img/ip.jpg"><img src="img/ip.jpg" alt=""></a>
+            <a class="fancybox-2" data-fancybox-group="gallery" title="image 1" href="img/pechat-vracha.jpg"><img src="img/pechat-vracha.jpg" alt=""></a>
+            <a class="fancybox-2" data-fancybox-group="gallery" title="image 1" href="img/ooo_TvJZHj2.jpg"><img src="img/ooo_TvJZHj2.jpg" alt=""></a>
+            <a class="fancybox-2" data-fancybox-group="gallery" title="image 1" href="img/tsvetnyie.jpg"><img src="img/tsvetnyie.jpg" alt=""></a>
+            <a class="fancybox-2" data-fancybox-group="gallery" title="image 1" href="img/zao.png"><img src="img/zao.png" alt=""></a>
+        </div>
+    </section>
+    <section class="brown-had-top w-12 section-5">
+        <div class="container">
+            <div class="title">Мотивирующие плакаты для вашего интерьера бесплатно</div>
+            <div class="is-gallery">
+                <div class="gallery row-h" data-slick='{"slidesToShow": 5, "slidesToScroll": 5}'>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 1" href="img/picture/1.jpg" ><img src="img/picture/1.jpg" alt=""></a>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 2" href="img/picture/2.jpg" ><img src="img/picture/2.jpg" alt=""></a>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 3" href="img/picture/3.jpg" ><img src="img/picture/3.jpg" alt=""></a>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 4" href="img/picture/4.jpg" ><img src="img/picture/4.jpg" alt=""></a>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 5" href="img/picture/5.jpg" ><img src="img/picture/5.jpg" alt=""></a>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 6" href="img/picture/6.jpg" ><img src="img/picture/6.jpg" alt=""></a>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 7" href="img/picture/7.jpg" ><img src="img/picture/7.jpg" alt=""></a>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 8" href="img/picture/8.jpg" ><img src="img/picture/8.jpg" alt=""></a>
+                    <!-- <a  class="fancybox-3" data-fancybox-group="gallery" title="image 9" href="img/picture/9.jpg" ><img src="img/picture/9.jpg" alt=""></a> -->
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 10" href="img/picture/10.jpg" ><img src="img/picture/10.jpg" alt=""></a>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 11" href="img/picture/11.jpg" ><img src="img/picture/11.jpg" alt=""></a>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 12" href="img/picture/12.jpg" ><img src="img/picture/12.jpg" alt=""></a>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 13" href="img/picture/13.jpg" ><img src="img/picture/13.jpg" alt=""></a>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 14" href="img/picture/14.jpg" ><img src="img/picture/14.jpg" alt=""></a>
+                    <a  class="fancybox-3" data-fancybox-group="gallery" title="image 15" href="img/picture/15.jpg" ><img src="img/picture/15.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="bottom">
+                <p class="p-1">Сохрани плакат, распечатай и повесь на видное место</p>
+                <p class="p-2">при заказе печати вы можете попросить менеджера привести одну из этих плакатов</p>
+                <p class="p-3">Адрес:  м. Волгоградский проспект</p>   
+                <p class="p-4">г. Москва, ул. Волгоградский пр-т, д. 32с12
+                <p class="p-5"> 2 этаж, офис 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Пн-Пт с 10.00-19.00</span></p>
+                <p class="p-7">Тел: <span>+7(495) 3-745-745</span><br>Моб: +7(925) 021-63-43 <br>E-mail: 3745745@gmail.com</p>
+                <p class="p-8">6 причин заказать изготовление печати в нашей Компании:</p>
+                <p class="num"><span>+7(925) 021-63-43</span><img src="img/whatsapp.png" alt=""></p>
+                <ul class="ul-1">
+                    <li>— минимальные сроки </li>
+                    <li>— оперативная доставка</li>
+                    <li>— ручная оснастка в подарок</li>
+                </ul>
+                <ul class="ul-2">
+                    <li>— гарантия 3 года на печати</li>
+                    <li>— широкий ассортимент оснасток</li>
+                    <li>— наличный, безналичный расчет</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container section-6">
+        <div class="map">
+            <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=fS4r5zRaZL-8OFecTWQUQaTVVdj5auh_&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        </div>
+        <div class="right">
+            <div class="submit submit-2f">заказать</div>
+            <form action="mail.php" method="post" enctype="multipart/formdiv">
+                    <div class="cont ">
+                          <input type="text" name="name-2f" placeholder="Наименование организации(Ф.И.О.ИП)*">
+                    </div>
+                    <div class="cont ">
+                          <input type="email" name="email-2f" placeholder="Email*">
+                    </div>
+
+                    <div class="cont ">
+                          <input class="the_phone" type="tel" name="tel-2f" value="" placeholder="Телефон*"></div>
+                    <div class="cont "> 
+                          <textarea name="text-2f" style="height: 100px" placeholder="ОГРН (ОРГНИП):   При необходимости укажите ИНН/КПП.                                   Напишите Коментарии и укажите адрес доставки.  Выберете дизаин макета"></textarea>
+                    </div>
+            </form>
+        </div>
+    </section>
+    <copy umbokc style="display:none"></copy>
+    <script>
+    $(document).ready(function(){
+        $('.gallery').slick({});
+        $(".the_phone").mask("(999) 999-99-99");
+        $('.fancybox').fancybox({
+            padding : 0,
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+        });
+        $('.fancybox-2').fancybox({
+            padding : 0,
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+        });
+        $('.fancybox-3').fancybox({
+            padding : 0,
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+        });
+        // validation from
+        $('.message .close').on('click', function() {
+            $('.message').fadeOut(300);
+        });
+        
+        // first form 
+        var the_file  = '';
+        var the_file_type  = '';
+        var the_file_name  = '';
+        $('.submit-1f').on('click', function() {
+            var name  = $('input[name="name-1f"]').val().trim();
+            var email = $('input[name="email-1f"]').val();
+            var tel   = $('input[name="tel-1f"]').val().trim();
+            var text  = $('textarea[name="text-1f"]').val().trim();
+
+            if(check_input_simple(name, 'name') && check_input_email(email)  && check_input_simple(tel, 'tel')){
+                // send mail
+                email = email.trim();
+                $.ajax({ 
+                    url: 'mail.php',
+                    type: 'POST',
+                    dataType: 'text',
+                    beforeSend: beforeFunc,
+                    data: ({name:name,email:email,tel:tel,text:text, file:the_file, file_type:the_file_type, file_name:the_file_name}),
+                    success: function (data){
+                        $('.message').fadeIn(300);
+                        $('.preload').fadeOut(0);
+                        $('input[name="name-1f"]').val('');$('input[name="email-1f"]').val('');$('input[name="tel-1f"]').val('');$('textarea[name="text-1f"]').val('');$('input[name="file-1f"]').val('');
+                    }
+                });
+            }
+        });
+
+        // second form
+        $('.submit-2f').on('click', function() {
+            var name  = $('input[name="name-2f"]').val().trim();
+            var email = $('input[name="email-2f"]').val();
+            var tel   = $('input[name="tel-2f"]').val().trim();
+            var text  = $('textarea[name="text-2f"]').val().trim();
+
+            if(check_input_simple(name, 'name') && check_input_email(email)  && check_input_simple(tel, 'tel')){
+                // send mail
+                email = email.trim();
+                $.ajax({ 
+                    url: 'mail.php',
+                    type: 'POST',
+                    dataType: 'text',
+                    beforeSend: beforeFunc,
+                    data: ({name:name,email:email,tel:tel,text:text}),
+                    success: function (data){
+                        $('.message').fadeIn(300);
+                        $('.preload').fadeOut(0);
+                        $('input[name="name-2f"]').val('');$('input[name="email-2f"]').val('');$('input[name="tel-2f"]').val('');$('textarea[name="text-2f"]').val('');
+                    }
+                });
+            }
+        });
+
+        function beforeFunc(argument) {
+            $('.preload').fadeIn(0);
+        }
+
+        function check_input_simple(name, what){
+            if(name == ''){
+                if(what == 'name') alert('Наименование организации(Ф.И.О.ИП): Обязательное поле');
+                else if(what == 'tel') alert('Телефон: Обязательное поле');
+                return false;
+            } else {
+                return true;
+            }
+        }
+        function check_input_email(name){
+            if (name.trim() == '') {
+                alert('Email: Обязательное поле');
+                return false;
+            } else {
+                var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+                if(!pattern.test(name)){
+                    alert('Email: Введите корректный email');
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        }
+
+        var control = document.getElementById("uploadimage");
+
+        control.addEventListener("change", function(evt) {
+            // Когда происходит изменение элементов управления, значит появились новые файлы
+            var files = evt.target.files;
+
+            // console.log("Filename: " + files[0].name);
+            // console.log("Type: " + files[0].type);
+            // console.log("Size: " + files[0].size + " bytes");
+            
+            the_file_type = files[0].type;
+            the_file_name = files[0].name;
+
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                var base64_my_file = e.target.result.split(";base64,");
+                // console.log(base64_my_file[1]);
+                the_file = base64_my_file[1];
+            };
+
+            reader.readAsDataURL(files[0]);
+
+        }, false);
+
+    });
+    $(window).on("resize scroll" ,function(e){
+        if(window.innerWidth < 1024)
+            $('.brown-had-top').css({"width":'1024px'});
+    });
+    </script>
+</body>
+</html>
